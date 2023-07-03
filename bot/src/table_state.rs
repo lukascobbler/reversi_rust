@@ -1,6 +1,6 @@
 use std::cmp::Ordering;
 
-#[derive(Clone, Eq, PartialEq, Debug)]
+#[derive(Clone, Eq, PartialEq, Debug, Hash)]
 pub struct Table {
     state: Vec<Vec<i32>>,
     pub bot: i32,
