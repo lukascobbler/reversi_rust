@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>848</width>
-    <height>659</height>
+    <width>866</width>
+    <height>733</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1798,6 +1798,18 @@ QLabel {
         <property name="spacing">
          <number>20</number>
         </property>
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
         <item>
          <layout class="QVBoxLayout" name="disk_info" stretch="1,2,1">
           <item>
@@ -1976,6 +1988,9 @@ QLabel {
     <item>
      <layout class="QVBoxLayout" name="bot_information">
       <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
        <number>5</number>
       </property>
       <property name="rightMargin">
