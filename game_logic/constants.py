@@ -19,19 +19,19 @@ def set_player_white():
 
 
 def generate_starting_board():
-    prazan_red = [EMPTY] * 8
-    crno_beli_red = [EMPTY] * 3 + [_BLACK, _WHITE] + [EMPTY] * 3
-    belo_crni_red = [EMPTY] * 3 + [_WHITE, _BLACK] + [EMPTY] * 3
+    empty_row = [EMPTY] * 8
+    black_white_row = [EMPTY] * 3 + [_BLACK, _WHITE] + [EMPTY] * 3
+    white_black_row = [EMPTY] * 3 + [_WHITE, _BLACK] + [EMPTY] * 3
 
-    tabla = []
+    table = []
 
-    for velicina in range(3):
-        tabla.append(copy.deepcopy(prazan_red))
+    for _ in range(3):
+        table.append(copy.deepcopy(empty_row))
 
-    tabla.append(copy.deepcopy(crno_beli_red))
-    tabla.append(copy.deepcopy(belo_crni_red))
+    table.append(copy.deepcopy(black_white_row))
+    table.append(copy.deepcopy(white_black_row))
 
-    for velicina in range(3):
-        tabla.append(copy.deepcopy(prazan_red))
+    for _ in range(3):
+        table.append(copy.deepcopy(empty_row))
 
-    return tabla
+    return table
